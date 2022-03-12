@@ -14,7 +14,7 @@ export default function Tequiero() {
   useEffect(() => {
 
     const music = new Audio("https://andresguanov.github.io/assets/love.mp3")
-    music.volume = 0.05
+    music.volume = 0.5
     music.loop = true
     setMusic(music)
 
@@ -43,7 +43,7 @@ export default function Tequiero() {
 
         <h1 className="text-5xl relative text-center">
           No hay nadie mejor que tú
-          <img className={`absolute top-5 -left-0 md:-left-14 cursor-pointer ${!paused && "bg-green-300 rounded-full"}`} src="/music.svg" width={30} height={30} alt="music" onClick={handleMusic} />
+          <img className={`absolute top-5 -left-5 sm:-left-14 cursor-pointer ${!paused && "bg-green-300 rounded-full"}`} src="/music.svg" width={30} height={30} alt="music" onClick={handleMusic} />
         </h1>
         <p className="max-w-xl mt-5 text-md">
           Hola Vale ✨ eres la chica más fabulosa, más genial y la más hermosa del mundo mundial. 
